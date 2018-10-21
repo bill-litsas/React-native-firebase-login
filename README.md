@@ -4,15 +4,14 @@ Insert your own google-services.json file from firebase in /android/app folder
 
 To run:
 ----------------
-npm install
-npm start
+<p>npm install</p>
+<p>npm start</p>
 
-and then:
-npm run android
+<p>and finally:</p>
+<p>npm run android</p>
 
-or whatever it is for IOS
+<p>or whatever it is for IOS</p>
 
 ** Not tested in IOS **
-coz I don't own a MAC :(
 
 Based on react-native-firebase-starter kit
