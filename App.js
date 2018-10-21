@@ -16,7 +16,7 @@ const App = SwitchNavigator(
     Main
   },
   {
-    initialRouteName: 'Loading'
+    initialRouteName: 'Login'
   }
 )
 

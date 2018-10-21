@@ -1,26 +1,40 @@
 import React from 'react'
 import { StyleSheet, Text, TextInput, View, Button } from 'react-native'
 import firebase from 'react-native-firebase';
+import Loader from '../components/Loader';
 
 export default class SignUp extends React.Component {
 
   state = {
     email: '',
     password: '',
-    errorMessage: null
+    errorMessage: null,
+    loading: false
   }
 
   handleSignUp = () => {
+    this.setState({ loading: true })
+
     firebase
       .auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password)
-      .then(() => this.props.navigation.navigate('Main'))
-      .catch(error => this.setState({ errorMessage: error.message }))
+      .then(() => {
+        this.setState({ loading: false })
+        this.props.navigation.navigate('Main')
+      })
+      .catch(error => {
+        this.setState({
+          errorMessage: error.message,
+          loading: false
+        })
+      })
   }
 
   render() {
     return (
       <View style={styles.container}>
+        <Loader
+          loading={this.state.loading} />
         <Text>Sign Up</Text>
         {this.state.errorMessage &&
           <Text style={{ color: 'red' }}>

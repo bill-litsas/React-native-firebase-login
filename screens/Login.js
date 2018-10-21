@@ -1,27 +1,43 @@
 import React from 'react'
 import { StyleSheet, Text, TextInput, View, Button } from 'react-native'
 import firebase from 'react-native-firebase'
+import Loader from '../components/Loader'
 
 export default class Login extends React.Component {
 
   state = {
     email: '',
     password: '',
-    errorMessage: null
+    errorMessage: null,
+    loading: false
   }
 
   handleLogin = () => {
+
     const { email, password } = this.state
+    this.setState({ loading: true })
+
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .then(() => this.props.navigation.navigate('Main'))
-      .catch(error => this.setState({ errorMessage: error.message }))
+      .then(() => {
+        this.setState({ loading: false })
+        this.props.navigation.navigate('Main')
+      })
+      .catch(error => {
+        this.setState({
+          errorMessage: error.message,
+          loading: false
+        })
+      })
+
   }
 
   render() {
     return (
       <View style={styles.container}>
+        <Loader
+          loading={this.state.loading} />
         <Text>Login</Text>
         {this.state.errorMessage &&
           <Text style={{ color: 'red' }}>
