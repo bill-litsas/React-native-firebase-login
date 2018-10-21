@@ -18,9 +18,6 @@ npm start
 npm run android
 </code>
 
-
-<p>or whatever it is for IOS</p>
-
 <h4>** Not tested for IOS **</h4>
 
 Based on react-native-firebase-starter kit
