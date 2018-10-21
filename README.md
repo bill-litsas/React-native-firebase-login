@@ -1,0 +1,1 @@
+package name: com.devrock.bandmate

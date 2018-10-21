@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "177502375967",
+    "firebase_url": "https://my-project-1508447967450.firebaseio.com",
+    "project_id": "my-project-1508447967450",
+    "storage_bucket": "my-project-1508447967450.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177502375967:android:e8b03c8c83b67ae2",
+        "android_client_info": {
+          "package_name": "com.devrock.bandmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177502375967-0e88cg9at61dv96u9lveaoqcdnmulrod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgjJMOhiVsmnHrS0ydjGB3VJ9yl1rcC_0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
