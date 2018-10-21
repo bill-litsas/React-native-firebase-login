@@ -5,14 +5,19 @@
 
 <h4>To run:</h4>
 <code>
-<p>npm install</p>
-<p>npm start</p>
+npm install
+</code>
+<code>
+npm start  
 </code>
 
+<br/>
 <p>and finally:</p>
+
 <code>
-<p>npm run android</p>
+npm run android
 </code>
+
 
 <p>or whatever it is for IOS</p>
 
