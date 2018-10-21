@@ -5,4 +5,4 @@ npm install
 npm start 
 npm run android
 
-* Not tested in IOS *
+** Not tested in IOS **
