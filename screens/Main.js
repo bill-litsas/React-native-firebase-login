@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Platform, Image, Text, View } from 'react-native'
+
 export default class Main extends React.Component {
   state = { currentUser: null }
   render() {
