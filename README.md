@@ -1,5 +1,4 @@
 <h3>A react native app with basic firebase auth</h3>
-----------------------------------------------------
 
 ** Insert your own google-services.json file from firebase in /android/app folder **
 
